@@ -21,10 +21,26 @@ export class StringValidator {
     return this
   }
 
+  isMinSize(minSize: number): this {
+    if (this.value.length < minSize) {
+      this.isValid = false
+    }
+    return this
+  }
+
   isEmail(): this {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/i
 
     if (typeof this.value !== 'string' || !emailRegex.test(this.value)) {
+      this.isValid = false
+    }
+    return this
+  }
+
+  isAlphanumeric(): this {
+    const alphanumericRegex = /^[a-zA-Z0-9]+$/
+
+    if (typeof this.value !== 'string' || !alphanumericRegex.test(this.value)) {
       this.isValid = false
     }
     return this
