@@ -1,4 +1,4 @@
-import { validator } from '../main'
+import { validator } from '../src/main'
 
 describe('Validator', () => {
   test('isString should return true for a valid string', () => {
