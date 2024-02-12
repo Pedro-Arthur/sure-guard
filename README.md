@@ -34,7 +34,7 @@ npm install sure-guard
 | `isAlphanumeric`   | Checks if the string contains only alphanumeric characters.| None              | `this`  |
 | `getResult`        | Returns the result of the validation.            | None                         | `boolean`|
 
-### Usage Example
+## Usage Example
 
 ```javascript
 import { validator } from 'sure-guard';
