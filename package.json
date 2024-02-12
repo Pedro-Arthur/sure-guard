@@ -4,14 +4,25 @@
   "description": "Node library for data validation",
   "scripts": {
     "start": "nodemon src/main.ts",
-    "lint": "eslint 'src/**/*.ts' --fix",
-    "format": "prettier --write 'src/**/*.ts'",
+    "lint": "eslint '**/*.{ts,js}' --fix",
+    "format": "prettier --write '**/*.{ts,js,json}'",
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": [],
+  "main": "dist/main.js",
+  "keywords": [
+    "data-validation",
+    "node-validation",
+    "validation",
+    "validator"
+  ],
   "author": "Pedro Arthur",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pedro-Arthur/sure-guard.git"
+  },
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
