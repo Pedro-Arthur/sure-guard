@@ -5,6 +5,6 @@ import { Validator } from './Validator'
  * @param {any} value - The value to be validated.
  * @returns {Validator} - The Validator instance.
  */
-export default function validator(value: any): Validator {
+export function validator(value: any): Validator {
   return new Validator(value)
 }
