@@ -1,6 +1,6 @@
 {
   "name": "sure-guard",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node library for data validation",
   "scripts": {
     "start": "nodemon src/main.ts",

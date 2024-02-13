@@ -37,7 +37,7 @@ npm install sure-guard
 ## Usage Example
 
 ```javascript
-import { validator } from 'sure-guard';
+const validator = require('sure-guard');
 
 const result1 = validator('hello').string().isEmail().getResult();
 // result1 === false

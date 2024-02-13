@@ -1,0 +1,7 @@
+tests/
+.editorconfig
+.eslintignore
+.eslintrc.json
+prettierrc.json
+jest.config.json
+tsconfig.json
